@@ -1,0 +1,19 @@
+{
+  "name": "forsale",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com-creepto:creepto/forsale.git",
+  "author": "Creepto <jdguy@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "predev": "rm -rf build",
+    "dev": "parcel --no-source-maps --no-cache -d build index.html",
+    "prebuild": "rm -rf build",
+    "build": "parcel build --no-source-maps --no-cache --public-url ./ -d build index.html"
+  },
+  "devDependencies": {
+    "node-forge": "0.10.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-interpolate-html": "^1.0.3"
+  }
+}
